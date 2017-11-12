@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "577778199771",
+    "firebase_url": "https://kypfirebaseproject-dcb60.firebaseio.com",
+    "project_id": "kypfirebaseproject-dcb60",
+    "storage_bucket": "kypfirebaseproject-dcb60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577778199771:android:88713b5d44a63147",
+        "android_client_info": {
+          "package_name": "tech.kyp.zientarski.kyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577778199771-ksaul2sqalprcbegft9q6cpoqc28hsnl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tech.kyp.zientarski.kyp",
+            "certificate_hash": "763a4b072b301c5c76eb4b8442e92074c99f2f38"
+          }
+        },
+        {
+          "client_id": "577778199771-us0jhj0vdph5cbmh0i87i51mkleqrjgd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA2m9BP2aSGn38gqZB6vXwpeX35UR4Deg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577778199771-us0jhj0vdph5cbmh0i87i51mkleqrjgd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
