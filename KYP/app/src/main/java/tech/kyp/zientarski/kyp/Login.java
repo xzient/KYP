@@ -106,10 +106,7 @@ public class Login extends AppCompatActivity {
                     public void onCompleted(JSONObject object, GraphResponse response) {
                         displayUserInfo(object);
 
-                        /**
-                         * ADD PUSH
-                         */
-                        myRef.push().setValue(userId);
+
 
 
                         //mConditionRef.getKey().push().setValue(userId);
@@ -182,28 +179,35 @@ public class Login extends AppCompatActivity {
             e.printStackTrace();
         }
         TextView tv_name, tv_email, tv_id;
-        tv_name = (TextView) findViewById(R.id.name);
-        tv_email = (TextView) findViewById(R.id.email);
-        tv_id = (TextView) findViewById(R.id.id);
+        //tv_name = (TextView) findViewById(R.id.name);
+        //tv_email = (TextView) findViewById(R.id.email);
+        //tv_id = (TextView) findViewById(R.id.id);
 
-        tv_name.setText(first_name + " "+ last_name);
-        tv_email.setText("Email : " + email);
-        tv_id.setText("ID :" + id);
+        ///tv_name.setText(first_name + " "+ last_name);
+        ///tv_email.setText("Email : " + email);
+        ///tv_id.setText("ID :" + id);
 
         user.name = first_name;
         user.id = id;
 
 
+        /**
+         * ADD person
+         */
+        myRef.child(id).child("gender").setValue(user.gender);
 
 
 
 
-        Map logins = new HashMap();
+
+
+
+        //Map logins = new HashMap();
 // Set the facebook token in the logins map
 
-        logins.put("graph.facebook.com", tv_id);
+        //logins.put("graph.facebook.com", tv_id);
 // Add the new map we created to the Credentials Provider
-        credentialsProvider.withLogins(logins);
+        //credentialsProvider.withLogins(logins);
         //;
 
 

@@ -14,6 +14,9 @@ public class User {
     public int race;
     public int religion;
     public int politics;
+    public int postsAvailable = 2;
+    public int post_count = 0;
+
 
 
     public static User getInstance() {
@@ -31,6 +34,8 @@ public class User {
         race = -1;
         religion = -1;
         politics = -1;
+        postsAvailable = 2;
+        post_count = 0;
     }
 
 

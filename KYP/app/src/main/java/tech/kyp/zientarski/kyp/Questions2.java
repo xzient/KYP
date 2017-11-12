@@ -83,10 +83,12 @@ public class Questions2 extends AppCompatActivity {
                 Toast.makeText(Questions2.this, String.valueOf(user.religion), Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(Questions2.this,
-                        MainActivity.class);
+                        Questions3.class);
                 startActivity(intent);
             }
         });
+
+
 
 
 

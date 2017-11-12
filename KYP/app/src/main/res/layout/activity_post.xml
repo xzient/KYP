@@ -9,13 +9,29 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="150dp" />
+        android:layout_height="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/warning_post"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
 
-
+    <EditText
+        android:id="@+id/post_post"
+        android:layout_width="match_parent"
+        android:gravity="top|left"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#E5E8E8"
+        android:layout_weight="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:text="" />
 
 
     <Button
-        android:id="@+id/main_post"
+        android:id="@+id/post_add"
         android:background="@color/colorPrimary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,17 +40,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="50dp" />
-
-
-
-    <Button
-        android:id="@+id/main_feed"
-        android:background="@color/colorPrimary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Go to feed"/>
+        android:layout_height="10dp" />
 
 
 </LinearLayout>

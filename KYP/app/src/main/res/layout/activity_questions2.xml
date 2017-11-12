@@ -62,6 +62,7 @@
         android:id="@+id/question2_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
         android:layout_gravity="center_horizontal"
         android:text="Next"/>
 
