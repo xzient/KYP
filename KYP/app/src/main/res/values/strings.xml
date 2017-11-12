@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">KYP</string>
+    <string name="facebook_app_id">158935354707542</string>
+    <string name="fb_login_protocol_scheme">fb158935354707542</string>
+
+</resources>
