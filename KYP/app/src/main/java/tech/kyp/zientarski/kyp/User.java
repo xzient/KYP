@@ -10,10 +10,11 @@ public class User {
 
     public String name;
     public String id;
-    public int gender; //1 - M, 2 - F, 3 - Other
+    public String gender; //1 - M, 2 - F, 3 - Other
     public int race;
     public int religion;
     public int politics;
+
 
     public static User getInstance() {
         if(instance == null) {
@@ -26,7 +27,7 @@ public class User {
     public void clearData() {
         name = "";
         id = "";
-        gender = -1;
+        gender = "";
         race = -1;
         religion = -1;
         politics = -1;

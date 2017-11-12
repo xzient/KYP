@@ -19,6 +19,7 @@ import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
+import com.facebook.HttpMethod;
 import com.facebook.appevents.AppEventsLogger;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
@@ -115,7 +116,7 @@ public class Login extends AppCompatActivity {
                         //Toast.makeText(Login.this, mConditionRef.getKey(), Toast.LENGTH_SHORT).show();
 
                         Intent intent = new Intent(Login.this,
-                                MainActivity.class);
+                                Questions1.class);
                         startActivity(intent);
 
 
@@ -123,7 +124,7 @@ public class Login extends AppCompatActivity {
                 });
 
                 Bundle parameters = new Bundle();
-                parameters.putString("fields", "first_name, last_name, email, id");
+                parameters.putString("fields", "first_name, last_name, email, id, gender");
                 graphRequest.setParameters(parameters);
                 graphRequest.executeAsync();
             }
@@ -175,6 +176,8 @@ public class Login extends AppCompatActivity {
             last_name = object.getString("last_name");
             email = object.getString("email");
             id = object.getString("id");
+            user.gender = object.getString("gender");
+            //Toast.makeText(Login.this, object.getString("gender"), Toast.LENGTH_SHORT).show();
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -189,6 +192,11 @@ public class Login extends AppCompatActivity {
 
         user.name = first_name;
         user.id = id;
+
+
+
+
+
 
         Map logins = new HashMap();
 // Set the facebook token in the logins map

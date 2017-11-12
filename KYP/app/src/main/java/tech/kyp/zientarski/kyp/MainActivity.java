@@ -17,9 +17,7 @@ public class MainActivity extends AppCompatActivity {
         //Set textview
 
         user = User.getInstance();
-
         textview = (TextView)findViewById(R.id.main_text);
-
         textview.setText(user.id);
 
 
